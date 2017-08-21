@@ -7,7 +7,7 @@
     "startExpress": "nodemon bin/www",
     "startAngular": "ng serve --proxy-config proxy.config.json --watch",
     "startProject": "concurrently --kill-others-on-fail \"npm run startExpress\" \"npm run startAngular\"",
-    "start": "nodemon bin/www",
+    "start": "node bin/www",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
