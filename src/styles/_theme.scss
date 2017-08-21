@@ -1,0 +1,112 @@
+/**
+ * All the overrides needed for SONIC
+ */
+
+// FEATURES
+$enable-flex        : true;
+
+// COLORS
+// Grays and Brand Colors
+$gray-1             : #373737;
+$gray-2             : #707276;
+$gray-3             : #999999;
+$gray-4             : #cccccc;
+$gray-5             : #dedede;
+$gray-6             : #eeeeee;
+$gray-7             : #f9f9f9;
+
+//Because Bootstrap Needs to be modified.
+$gray-dark          : $gray-1;
+$gray               : $gray-2;
+$gray-light         : $gray-4;
+$gray-lighter       : $gray-6;
+$gray-lightest      : $gray-7;
+
+$brand-primary      : #009dd9;
+$brand-success      : #85c63f;
+$brand-info         : #ffcd00; // change it later
+$brand-warning      : #ff8300;
+$brand-danger       : #d60037;
+
+// COLOR VARIANTS
+// Blue
+$brand-lightest-blue: #DBE8FC;
+$brand-light-blue   : #B8D2FA;
+$brand-dark-blue    : #4D84AF;
+$brand-darkest-blue : #3A73CA;
+
+// Green
+$brand-lightest-green: #E2F3D2;
+$brand-darkest-green: #678300;
+$brand-darker-green: #819817;
+
+// Red
+$brand-lightest-red: #F0DEDE;
+$brand-darkest-red: #A61B36;
+
+// Yellow
+$brand-lightest-yellow: #FBF9E2;
+$brand-darkest-yellow: #A07900;
+
+// Purple
+$brand-purple: #9E28B5;
+
+$brand-white        : #fff;
+$brand-black        : #000;
+
+// TYPOGRAPHY
+//$font-size-root     : 13px;
+
+// BODY
+$body-bg            : $gray-lightest;
+
+// TABLES
+$table-bg-hover     : #edf4fe; //because mocks don't follow design standard?
+$table-border-color : $gray-5;
+
+// FILE TYPE ICONS
+$icon-file-sprite: "../images/doc-icons-flat.png";
+$icon-file-height: 32px;
+$icon-file-width: 24px;
+
+// PAGINATION
+$pagination-border-width: 0;
+$pagination-active-color: $gray-3;
+$pagination-active-bg: $gray-7;
+
+// BUTTON
+$btn-primary-border : $brand-dark-blue;
+
+$btn-default-color: $gray-2;
+$btn-default-bg: $gray-6;
+$btn-default-border: $gray-4;
+
+//LINKS
+$link-color: $brand-primary;
+$link-hover-color: darken($link-color, 10%);
+
+// Alerts and States
+$state-success-text: $brand-darkest-green;
+$state-success-bg: $brand-lightest-green;
+$state-success-border: $brand-darkest-green;
+$state-info-text: $brand-dark-blue;
+$state-info-bg: $brand-lightest-blue;
+$state-info-border: $brand-light-blue;
+$state-warning-text: $brand-darkest-yellow;
+$state-warning-bg: $brand-lightest-yellow;
+$state-warning-border: $brand-darkest-yellow;
+$state-danger-text: $brand-darkest-red;
+$state-danger-bg: $brand-lightest-red;
+$state-danger-border: $brand-darkest-red;
+
+//FONT-FAMILY
+$arial-font-family: "Arial";
+
+//ARROW-POINTER
+$arrow-width: 12px;
+
+// MAX-WIDTH OF MODAL
+$modal-md: 600px;
+
+// GRID GUTTER WIDTH
+$grid-gutter-width-base: 1.875rem;

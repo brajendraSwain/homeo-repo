@@ -1,0 +1,65 @@
+<md-tab-group>
+  <md-tab label="Add Patient Details">
+    <md-card class="example-card">
+      <md-card-content>
+        <form class="example-form">
+          <table class="example-full-width" cellspacing="0">
+            <tr>
+              <td>
+                <md-input-container >
+                  <input mdInput [(ngModel)]="firstName" placeholder="First name" name="fistName">
+                </md-input-container>
+              </td>
+              <td>
+                <md-input-container>
+                  <input mdInput [(ngModel)]="lastName" placeholder="Last Name" name="lastName">
+                </md-input-container>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <md-input-container>
+                  <input mdInput [(ngModel)]="dob" [mdDatepicker]="picker" placeholder="Date of Birth" name="dob">
+                  <button mdSuffix [mdDatepickerToggle]="picker"></button>
+                </md-input-container>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <md-select placeholder="Marital Status" name="mStatus" [(ngModel)]="maritalStatus">
+                  <md-option *ngFor="let status of maritalStatusCat" [value]="status.value">
+                    {{status.viewValue}}
+                  </md-option>
+                </md-select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <md-input-container>
+                  <textarea mdInput [(ngModel)]="address" placeholder="Address" name="address"></textarea>
+                </md-input-container>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <md-input-container>
+                  <input mdInput #phonenumber="ngModel" [(ngModel)]="mobileNum" maxlength="10" placeholder="Mobile Number" name="phonenumber">
+                </md-input-container>
+              </td>
+            </tr>
+
+          </table>
+        </form>
+      </md-card-content>
+      <md-card-actions>
+        <button md-button (click)="addPatientHandler($event)">SUBMIT</button>
+        <button md-button (click)="clearAll()">RESET</button>
+      </md-card-actions>
+    </md-card>
+  </md-tab>
+  <md-tab label="Medicine History"></md-tab>
+</md-tab-group>
+
+<md-datepicker #picker></md-datepicker>
+
+
